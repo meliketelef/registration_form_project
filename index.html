@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS dosyasını bağladık -->
+</head>
+<body>
+
+    <!-- Üst Navigasyon Menüsü -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ana İçerik -->
+    <div class="main-content">
+        <!-- Sol ve Sağ Reklam Alanları -->
+        <div class="ad ad-left">
+            <img src="ad-left.png" alt="Ad">
+        </div>
+        <div class="ad ad-right">
+            <img src="ad-right.png" alt="Ad">
+        </div>
+
+        <!-- Form Alanı -->
+        <div class="form-container">
+            <form>
+                <!-- İsim Girişleri -->
+                <div class="form-group">
+                    <label for="first-name">Name</label>
+                    <input type="text" id="first-name" placeholder="First Name">
+                    <input type="text" id="last-name" placeholder="Last Name">
+                </div>
+
+                <!-- Şirket Girişi -->
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" placeholder="Company">
+                </div>
+
+                <!-- Email Girişi -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+
+                <!-- Telefon Girişi -->
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <select id="area-code">
+                        <option>Area Code</option>
+                        <!-- Bölge kodları burada olacak -->
+                    </select>
+                    <input type="text" id="phone-number" placeholder="Phone Number">
+                </div>
+
+                <!-- Konu Seçimi -->
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option>--Choose option--</option>
+                        <!-- Konular burada olacak -->
+                    </select>
+                </div>
+
+                <!-- Başlangıç Durumu (Yes/No) -->
+                <div class="form-group">
+                    <label>Are you beginner?</label>
+                    <input type="radio" id="beginner-yes" name="beginner" value="yes">
+                    <label for="beginner-yes">Yes</label>
+                    <input type="radio" id="beginner-no" name="beginner" value="no">
+                    <label for="beginner-no">No</label>
+                </div>
+
+                <!-- Gönder Butonu -->
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript dosyasını bağladık -->
+</body>
+</html>
